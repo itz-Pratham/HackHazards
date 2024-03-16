@@ -18,14 +18,18 @@ nav ul {
 
 nav li {
     float: left;
+    
 }
-
+a{
+    text-decoration: none;
+}
 nav li a {
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    color: rgb(122, 154, 154);
+    
 }
 
 nav li a:hover {
