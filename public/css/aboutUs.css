@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/leaf_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    /* max-height: 100%; */
+    
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+}
+h1{
+    margin: 0%;
+    padding: 0%;
+    font-size: 27px;
+}
+
+.img {
+    width: 400px;
+    height: 400px;
+    position: static;
+    
+    
+    /* border-radius: 100%; */
+}
+
+/* Style the header and navigation */
+
+
+/* Style the about section */
+
+
+.main-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr; /* Two equal columns */
+    align-items: center;
+    margin-top: 40px;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Style the about content */
+.about-content {
+    width: 100%;
+    text-align: left;
+    /* line-height: 140%; */
+    /* font-weight: bold; */
+    font-size: 23px;
+}
+#design{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /* margin-top: 50px; */
+}
+
+
+#aboutUs{
+    text-decoration: underline;
+    color: #212529;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 15px;
+}

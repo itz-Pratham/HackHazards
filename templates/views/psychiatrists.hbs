@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/extra1.css">
+    
+    <link rel="icon" href="./images/logo1-removebg-preview.png">
+    <title>PSYCHIATRISTS</title>
+    <style>
+        /* Button styling */
+   
+
+    /* Schedule container hidden by default */
+    .schedule-container {
+      display: none;
+      background-color: #53b3d5;
+      padding: 20px;
+      color: black;
+    }
+    .schedule-container{
+    background-image: url('https://static8.depositphotos.com/1033704/980/i/450/depositphotos_9808899-stock-photo-silver-gray-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    z-index: 0.2;
+}
+
+.contain h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    text-decoration: underline;
+}
+
+.name {
+    width: fit-content;
+    display: grid;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 18px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: left;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.section{
+    width: fit-content;
+    display: grid;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    display: left;
+    color: black;
+    margin-bottom: 20px;
+}
+
+table,th,td,tr{
+    border: 1px solid black;
+    background-color: aquamarine;
+    text-align: center;
+    display: center;
+    padding: 3px;
+    table-layout: auto;
+    tab-size: 200pc 150pc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    gap: 10px;
+
+}
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+   <header>
+        <nav>
+            <div class="logo">
+                <a href="/home">PSYCHIATRISTS</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="firstaid">First Aid</a></li>
+                    <li><a href="/aboutus">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="image1">
+            <img src="https://t4.ftcdn.net/jpg/01/87/68/23/360_F_187682334_z5ry00aGfJWVH0qwHVipaXiMGAtsFHc4.jpg" alt="Doctor 1">
+        </div>
+        <div class="details1">
+            <h2>Richard Brown</h2>
+            <p>Education : MBBS, MD(Psychiatry)</p>
+            <p>Address :  Sector-12, Rohini</p>
+            <p>Timings : 12:00 pm - 4:00 pm</p>
+            <a class="btn-call" href="#" style="text-decoration: none; padding: 5px; color: black;"><img src = "https://www.pngmart.com/files/7/Call-Button-PNG-Picture.png"></a>
+            <a class="btn-call" href="#" style="text-decoration: none; padding: 5px; color: black;"><img src = "https://cdn.pixabay.com/photo/2020/12/21/11/15/google-5849613_640.png"></a>
+            <a class="btn-call" onclick="showSchedule1()" href="#" style="text-decoration: none; cursor: pointer; padding: 5px; color: black;"><img src = "https://t3.ftcdn.net/jpg/05/46/21/88/360_F_546218863_6pZZf53DrblGWh204zv2z5GTgfWNsk6w.jpg"></a>
+            <!-- <div class="stars">★★★☆☆</div> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image1">
+            <img src="https://media.istockphoto.com/id/1366374033/photo/shot-of-a-young-doctor-using-a-digital-tablet-in-a-modern-hospital.jpg?s=612x612&w=0&k=20&c=N0oQFd_0VKs3Q2o2YLCR5hTBNIVHqdiHsh2SaTKhPoM=" alt="Doctor 2">
+        </div>
+        <div class="details1">
+            <h2>Ava Stone</h2>
+            <p>Education : MBBS, MD(Psychiatry)</p>
+            <p>Address :  Sector-64, Noida</p>
+            <p>Timings : 11:00 am - 2:00 pm</p>
+            <a class="btn-call" href="#" style="text-decoration: none; padding: 5px; color: black;"><img src = "https://www.pngmart.com/files/7/Call-Button-PNG-Picture.png"></a>
+            <a class="btn-call" href="#" style="text-decoration: none; padding: 5px; color: black;"><img src = "https://cdn.pixabay.com/photo/2020/12/21/11/15/google-5849613_640.png"></a>
+            <a class="btn-call" onclick="showSchedule2()" href="#" style="text-decoration: none; cursor: pointer; padding: 5px; color: black;"><img src = "https://t3.ftcdn.net/jpg/05/46/21/88/360_F_546218863_6pZZf53DrblGWh204zv2z5GTgfWNsk6w.jpg"></a>
+            <!-- <div class="stars">★★★☆☆</div> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image1">
+            <img src="https://media.gettyimages.com/id/1307155498/photo/smiling-male-doctor-against-gray-background.jpg?s=612x612&w=0&k=20&c=aUeeX6ygz7JmykqBAzOPX-DvGWKpt_ms3wStqup3ytM=" alt="Doctor 3">
+        </div>
+        <div class="details1">
+            <h2>Joseph Taylor</h2>
+            <p>Education : MBBS, MD(Psychiatry)</p>
+            <p>Address :  Sector-84, Dwarka</p>
+            <p>Timings : 12:00 pm - 6:00 pm</p>
+            <a class="btn-call" href="#" style="text-decoration: none; padding: 5px; color: black;"><img src = "https://www.pngmart.com/files/7/Call-Button-PNG-Picture.png"></a>
+            <a class="btn-call" href="https://www.google.com/maps/place/Rithala+Metro+Station/@28.719778,77.1060951,17z/data=!3m1!4b1!4m6!3m5!1s0x390d014e9b4e6dab:0xceea3e307efaf872!8m2!3d28.719778!4d77.10867!16s%2Fg%2F1trqflf4?entry=ttu" style="text-decoration: none; padding: 5px; color: black;"><img src = "https://cdn.pixabay.com/photo/2020/12/21/11/15/google-5849613_640.png"></a>
+            <a class="btn-call" onclick="showSchedule3()" href="#" style="text-decoration: none; cursor: pointer; padding: 5px; color: black;"><img src = "https://t3.ftcdn.net/jpg/05/46/21/88/360_F_546218863_6pZZf53DrblGWh204zv2z5GTgfWNsk6w.jpg"></a>
+            <!-- <div class="stars">★★★☆☆</div> -->
+        </div>
+    </div>
+    <div class="schedule-container" id="schedule1">
+        <div class = "contain">
+            <h3>SCHEDULE</h3>
+        </div>
+        <div class = "name">
+            <p>Doctor's Name : Richard Brown</p>
+        </div>
+        <div class="section">
+            <p>Week : 22/10/23 - 28/10/23</p>
+        </div>
+        <table id="excel-table1">
+            <!-- <thead>
+                <th>TIME SLOT</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </thead> -->
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    <input type="file" id="file-input1" style="margin-top: 5px; font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 150;" accept=".xlsx, .xls" />
+    <button id="load-excel-button1" style="margin: 5px; font-size: 19px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; display: inline-block; background-color: bisque;">Load Excel Data</button>
+    </div>
+
+    <div class="schedule-container" id="schedule2">
+        <div class = "contain">
+            <h3>SCHEDULE</h3>
+        </div>
+        <div class = "name">
+            <p>Doctor's Name : Ava Stone</p>
+        </div>
+        <div class="section">
+            <p>Week : 22/10/23 - 28/10/23</p>
+        </div>
+        <table id="excel-table2">
+            <!-- <thead>
+                <th>TIME SLOT</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </thead> -->
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    <input type="file" id="file-input2" style="margin-top: 5px; font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 150;" accept=".xlsx, .xls" />
+    <button id="load-excel-button2" style="margin: 5px; font-size: 19px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; display: inline-block; background-color: bisque;">Load Excel Data</button>
+    </div>
+
+    <div class="schedule-container" id="schedule3">
+        <div class = "contain">
+            <h3>SCHEDULE</h3>
+        </div>
+        <div class = "name">
+            <p>Doctor's Name : Joseph Taylor</p>
+        </div>
+        <div class="section">
+            <p>Week : 22/10/23 - 28/10/23</p>
+        </div>
+        <table id="excel-table3">
+            <!-- <thead>
+                <th>TIME SLOT</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </thead> -->
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    <input type="file" id="file-input3" style="margin-top: 5px; font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 150;" accept=".xlsx, .xls" />
+    <button id="load-excel-button3" style="margin: 5px; font-size: 19px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; display: inline-block; background-color: bisque;">Load Excel Data</button>    </div>
+
+      <script>
+        function showSchedule1() {
+          const schedule1 = document.getElementById('schedule1');
+          if (schedule1.style.display === 'none' || schedule1.style.display === '') {
+            schedule1.style.width = '40%';
+            schedule1.style.display = 'grid';
+            schedule1.style.marginLeft = '55%';
+            schedule1.style.marginTop = '-600px';
+          } else {
+            schedule1.style.display = 'none';
+          }
+        }
+
+        function showSchedule2() {
+          const schedule2 = document.getElementById('schedule2');
+          if (schedule2.style.display === 'none' || schedule2.style.display === '') {
+            schedule2.style.width = '40%';
+            schedule2.style.display = 'grid';
+            schedule2.style.marginLeft = '55%';
+            schedule2.style.marginTop = '-600px';
+          } else {
+            schedule2.style.display = 'none';
+          }
+        }
+
+        function showSchedule3() {
+          const schedule3 = document.getElementById('schedule3');
+          if (schedule3.style.display === 'none' || schedule3.style.display === '') {
+            schedule3.style.width = '40%';
+            schedule3.style.display = 'grid';
+            schedule3.style.marginLeft = '55%';
+            schedule3.style.marginTop = '-600px';
+          } else {
+            schedule3.style.display = 'none';
+          }
+        }
+
+
+        // Michael
+
+
+        document.getElementById('load-excel-button1').addEventListener('click', function () {
+          const fileInput1 = document.getElementById('file-input1');
+          const excelTable1 = document.getElementById('excel-table1');
+      
+          if (fileInput1.files.length === 0) {
+            alert('Please select an Excel file first.');
+            return;
+          }
+      
+          const file1 = fileInput1.files[0];
+          const reader1 = new FileReader();
+      
+          reader1.onload = function (e) {
+            const data1 = new Uint8Array(e.target.result);
+            const workbook1 = XLSX.read(data1, { type: 'array' });
+      
+            // Assuming the first sheet in the Excel file should be used
+            const sheetName1 = workbook1.SheetNames[0];
+            const sheet1 = workbook1.Sheets[sheetName1];
+      
+            const tableBody1 = excelTable1.querySelector('tbody');
+            tableBody1.innerHTML = XLSX.utils.sheet_to_html(sheet1);
+      
+            // You can add additional styling or formatting here if needed
+      
+            fileInput1.value = ''; // Reset the file input
+          };
+      
+          reader1.readAsArrayBuffer(file1);
+        });
+
+
+        // Sarah Johnson
+
+
+        document.getElementById('load-excel-button2').addEventListener('click', function () {
+          const fileInput2 = document.getElementById('file-input2');
+          const excelTable2 = document.getElementById('excel-table2');
+      
+          if (fileInput2.files.length === 0) {
+            alert('Please select an Excel file first.');
+            return;
+          }
+      
+          const file2 = fileInput2.files[0];
+          const reader2 = new FileReader();
+      
+          reader2.onload = function (e) {
+            const data2 = new Uint8Array(e.target.result);
+            const workbook2 = XLSX.read(data2, { type: 'array' });
+      
+            // Assuming the first sheet in the Excel file should be used
+            const sheetName2 = workbook2.SheetNames[0];
+            const sheet2 = workbook2.Sheets[sheetName2];
+      
+            const tableBody2 = excelTable2.querySelector('tbody');
+            tableBody2.innerHTML = XLSX.utils.sheet_to_html(sheet2);
+      
+            // You can add additional styling or formatting here if needed
+      
+            fileInput2.value = ''; // Reset the file input
+          };
+      
+          reader2.readAsArrayBuffer(file2);
+        });
+
+        // Rahul Dev
+
+        document.getElementById('load-excel-button3').addEventListener('click', function () {
+          const fileInput3 = document.getElementById('file-input3');
+          const excelTable3 = document.getElementById('excel-table3');
+      
+          if (fileInput3.files.length === 0) {
+            alert('Please select an Excel file first.');
+            return;
+          }
+      
+          const file3 = fileInput3.files[0];
+          const reader3 = new FileReader();
+      
+          reader3.onload = function (e) {
+            const data3 = new Uint8Array(e.target.result);
+            const workbook3 = XLSX.read(data3, { type: 'array' });
+      
+            // Assuming the first sheet in the Excel file should be used
+            const sheetName3 = workbook3.SheetNames[0];
+            const sheet3 = workbook3.Sheets[sheetName3];
+      
+            const tableBody3 = excelTable3.querySelector('tbody');
+            tableBody3.innerHTML = XLSX.utils.sheet_to_html(sheet3);
+      
+            // You can add additional styling or formatting here if needed
+      
+            fileInput3.value = ''; // Reset the file input
+          };
+      
+          reader3.readAsArrayBuffer(file3);
+        });
+      </script>
+
+    
+
+
+
+    <!-- Repeat the container structure for more doctors -->
+</body>
+</html>

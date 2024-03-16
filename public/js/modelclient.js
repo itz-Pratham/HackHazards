@@ -1,0 +1,20 @@
+const mongoose=require('mongoose');
+const employeeschema =new mongoose.Schema({
+    
+    email:{
+        type:String,
+        required:true,
+        unique:true
+    },
+    password :{
+        type:String,
+        required:true
+    },
+    confirmpassword : {
+        type:String,
+        required:true
+    },
+})
+
+const Register=new mongoose.model("SignupDetail",employeeschema);
+module.exports=Register;
