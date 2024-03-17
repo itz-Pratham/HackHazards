@@ -6,10 +6,17 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
+<<<<<<< HEAD
 diabetes_model = pickle.load(open('C:/Users/Rajiv Arora/Desktop/HackHazards/saved models/diabetes_model.sav', 'rb'))
 
 
 parkinsons_model = pickle.load(open('C:/Users/Rajiv Arora/Desktop/HackHazards/saved models/parkinsons_model.sav', 'rb'))
+=======
+diabetes_model = pickle.load(open('C:/Users/Pratham/OneDrive/Desktop/HackHazards/saved models/diabetes_model.sav', 'rb'))
+
+
+parkinsons_model = pickle.load(open('C:/Users/Pratham/OneDrive/Desktop/HackHazards/saved models/parkinsons_model.sav', 'rb'))
+>>>>>>> 082e2a630df66657bd530dedc613c0251ae4ef48
 
 st.markdown('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">', unsafe_allow_html=True)
 

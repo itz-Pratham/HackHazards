@@ -5,8 +5,8 @@ const app=express();
 const hbs=require("hbs")
 const port= 4000;
 require("./public/js/conn");
-const Register=require("./public/js/modelclient")
-const Register1=require("./public/js/modeldoc")
+const user=require("./public/js/modelclient")
+const doctor=require("./public/js/modeldoc")
 
 
 
@@ -102,7 +102,7 @@ app.post("/signup",async(req,res)=>{
         const password=req.body.password;
         const cpassword=req.body.confirmpassword;
         if(password===cpassword){
-            const registerEmployee=new Register({
+            const registerEmployee=new user({
                 
                 name :req.body.name,
                 email:req.body.email,
@@ -119,12 +119,13 @@ app.post("/signup",async(req,res)=>{
         res.status(404).send(error);
     }
 });
+let role;
 app.post("/docsignup",async(req,res)=>{
     try{
         const password=req.body.password;
         const cpassword=req.body.confirmpassword;
         if(password===cpassword){
-            const registerEmployee1=new Register1({
+            const registerEmployee1=new doctor({
                 
                 name :req.body.name,
                 email :req.body.email,
@@ -151,7 +152,15 @@ app.post("/login",async(req,res)=>{
     try {
         const email=req.body.email;
         const password=req.body.password;
-        const User=await Register.findOne({email:email});
+        const role=req.body.role;
+        let User;
+        if(role==="doctor"){
+            User=await doctor.findOne({email:email});
+        }
+        if(role==="user"){
+            User=await user.findOne({email:email});
+        }
+        
         if(User.password===password){
             res.status(201).render("home.hbs");
         }

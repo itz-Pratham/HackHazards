@@ -41,5 +41,5 @@ const employeeschema1 =new mongoose.Schema({
     },
 })
 
-const Register=new mongoose.model("SignupDetail1",employeeschema1);
-module.exports=Register;
+const doctor=new mongoose.model("Doc_Detail",employeeschema1);
+module.exports=doctor;
