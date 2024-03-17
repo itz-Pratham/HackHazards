@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>First Aid and Medical Guidelines</title>
+      <meta name="google" content="notranslate">
     <link rel="icon" href="./images/logo1-removebg-preview.png">
     <link rel="stylesheet" type="text/css" href="../../css/FirstAid.css">
 </head>
 <body>
-    <header>
+  <div id="translate">
+        
         <h1>First Aid and Medical Guidelines</h1>
+        <div id="google-element"></div>
+ 
     </header>
 
     <nav>
@@ -219,6 +223,15 @@
 
     <footer>
         <p>&copy; 2023 First Aid Webpage</p>
+       
     </footer>
+    </div>
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+      function loadGoogleTranslate(){
+        new google.translate.TranslateElement("google-element");
+      }
+    </script>
+   
 </body>
 </html>

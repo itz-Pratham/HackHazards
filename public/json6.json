@@ -1,0 +1,239 @@
+{
+    "#comment": "",
+    "html": {
+      "head": {
+        "meta": {
+          "@charset": "UTF-8"
+        },
+        "title": "First Aid and Medical Guidelines",
+        "button": {
+          "@id": "btn",
+          "#text": "Click Me"
+        },
+        "link": [
+          {
+            "@rel": "icon",
+            "@href": "./images/logo1-removebg-preview.png"
+          },
+          {
+            "@rel": "stylesheet",
+            "@type": "text/css",
+            "@href": "../../css/FirstAid.css"
+          }
+        ]
+      },
+      "body": {
+        "div": {
+          "@id": "translate",
+          "h1": "First Aid and Medical Guidelines",
+          "nav": {
+            "ul": {
+              "li": [
+                {
+                  "a": {
+                    "@href": "#first-aid-basics",
+                    "#text": "First Aid Basics"
+                  }
+                },
+                {
+                  "a": {
+                    "@href": "#medical-guidelines",
+                    "#text": "Medical Guidelines"
+                  }
+                },
+                {
+                  "a": {
+                    "@href": "#emergency-numbers",
+                    "#text": "Emergency Numbers"
+                  }
+                }
+              ]
+            }
+          },
+          "section": [
+            {
+              "@id": "first-aid-basics",
+              "h2": "First Aid Basics",
+              "p": "Here you can find information about essential first aid techniques and procedures.",
+              "#comment": "",
+              "div": {
+                "@class": "horizontal-para",
+                "div": [
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "CPR (Cardiopulmonary Resuscitation)",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "If someone is unresponsive and not breathing normally, call 911 immediately.",
+                            "Start chest compressions by pushing hard and fast in the center of the chest (at least 2 inches deep) at a rate of 100-120 compressions per minute.",
+                            "If you're trained, combine chest compressions with rescue breaths (30 compressions followed by 2 breaths) until help arrives."
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Choking",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": {
+                            "ol": {
+                              "li": [
+                                "Stand behind the person, place a fist just above their navel, and grasp it with your other hand. Pull sharply inward and upward.",
+                                "Continue this until the object is dislodged or the person loses consciousness (then start CPR)."
+                              ]
+                            },
+                            "#text": "If someone is choking and can't cough, speak, or breathe, perform the Heimlich maneuver procedure:"
+                          },
+                          "#comment": ""
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Bleeding",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "For minor cuts, wash the wound with soap and water, apply an antiseptic, and cover with a sterile bandage.",
+                            "For severe bleeding, apply direct pressure with a clean cloth or bandage and elevate the injured area.",
+                            "If bleeding doesn't stop, call 911."
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Burns",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "For minor burns, run cool (not cold) water over the affected area for at least 10 minutes.",
+                            "Cover with a sterile dressing or clean cloth.",
+                            "For severe burns, call 911 and avoid using adhesive bandages or ointments."
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Fractures and Sprains",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "Immobilize the injured area by using a splint or a rolled-up newspaper and wrap it with a bandage or cloth.",
+                            "Keep the injured limb elevated if possible.",
+                            "Seek medical attention."
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Heart-Related Illnesses",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "For heat exhaustion, move to a cooler place, drink water, and rest.",
+                            "For heatstroke, call 911. Move to a cooler place, use cold compresses, and remove excess clothing."
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Poisoning",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "Call the Poison Control Center at 1-800-222-1222 immediately if you suspect poisoning.",
+                            "Follow their guidance on what to do next."
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "@class": "First",
+                    "div": {
+                      "@class": "details",
+                      "details": {
+                        "summary": "Seizures",
+                        "ul": {
+                          "@class": "medical-basics",
+                          "li": [
+                            "Keep the person safe by moving objects away from them",
+                            "Place the person on their side after the seizure stops to prevent choking on saliva or vomit.",
+                            "Do not restrain the person or put anything in their mouth."
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "medical-guidelines",
+              "h2": "Medical Guidelines",
+              "p": "Learn about important medical guidelines and health recommendations.",
+              "#comment": "",
+              "ul": {
+                "@class": "medical-basics",
+                "li": [
+                  "Healthy Diet and Nutrition: Maintain a balanced diet with plenty of fruits, vegetables, whole grains, lean proteins, and limited sugar, salt, and saturated fats.",
+                  "Adequate Hydration: Drink enough water daily to stay well-hydrated. The recommended amount varies but is typically around 8-10 cups (2-2.5 liters) per day.",
+                  "Adequate Sleep: Aim for 7-9 hours of quality sleep per night for optimal physical and mental health.",
+                  "Regular Health Check-ups: Schedule regular health check-ups with your healthcare provider for preventive care and early detection of health issues.",
+                  "Immunizations: Stay up to date with recommended vaccinations to prevent serious diseases."
+                ]
+              }
+            },
+            {
+              "@id": "emergency-numbers",
+              "h2": "Emergency Numbers",
+              "p": "For immediate assistance, please call the following emergency numbers:",
+              "ul": {
+                "li": [
+                  "Emergency Services: 911",
+                  "Medical Advice: 123-456-7890"
+                ],
+                "#comment": ""
+              }
+            }
+          ],
+          "footer": {
+            "p": "© 2023 First Aid Webpage"
+          }
+        }
+      }
+    }
+  }
